@@ -11,3 +11,4 @@ function getRandomCat() {
       catContainer.textContent = arrayObjetos[5].title;
     });
 }
+
