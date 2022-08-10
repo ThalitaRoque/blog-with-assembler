@@ -1,5 +1,16 @@
 const btnCat = document.getElementById("btnCat");
 const catContainer = document.getElementById("catContainer");
+// const posts = document.getElementsByClassName("list-group-item");
+
+//  for(i=0; i<posts.length; i++){
+//   posts[i].addEventListener("click", ()=>{
+    
+//   })
+//  }
+
+
+
+
 
 window.addEventListener("load", () => {
   fetch("http://localhost:3000/posts")
@@ -11,6 +22,9 @@ window.addEventListener("load", () => {
       for (i = 0; i < 9; i++) {
         const titles = document.getElementsByClassName("list-title");
         titles[i].textContent = "Title: " + arrayObjetos[i].title;
+
+        const modalTitle = document.getElementById("title-modal");
+        modalTitle.textContent = "Title: " + arrayObjetos[i].title;
       }
     });
 });
