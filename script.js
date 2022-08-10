@@ -10,3 +10,4 @@ function getRandomCat() {
       console.log(arrayObjetos[5].body);
     });
 }
+
