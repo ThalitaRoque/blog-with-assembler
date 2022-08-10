@@ -8,5 +8,6 @@ function getRandomCat() {
     .then((array) => array.json())
     .then((arrayObjetos) => {
       console.log(arrayObjetos[5].body);
+      catContainer.textContent = arrayObjetos[5].title;
     });
 }
