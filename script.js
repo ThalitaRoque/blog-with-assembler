@@ -1,5 +1,3 @@
-const btnCat = document.getElementById("btnCat");
-const catContainer = document.getElementById("catContainer");
 // const posts = document.getElementsByClassName("list-group-item");
 
 //  for(i=0; i<posts.length; i++){
@@ -81,82 +79,77 @@ window.addEventListener("load", () => {
       // console.log(arrayObjetos[0].name);
       // console.log(arrayObjetos[0].email);
 
-      arrayObjetos.map((copy) => {
-        console.log(`Nombre ${copy.name} y Email ${copy.email}`);
+      // arrayObjetos.map((copy) => {
+      //   console.log(`Nombre ${copy.name} y Email ${copy.email}`);
+      // });
 
-        const modalName = document.getElementById("name-modal1");
-        modalName.textContent = "name: " + arrayObjetos[0].name;
+      const modalName = document.getElementById("name-modal1");
+      modalName.textContent = "name: " + arrayObjetos[0].name;
 
-        const modalName2 = document.getElementById("name-modal2");
-        modalName2.textContent = "name: " + arrayObjetos[1].name;
+      const modalName2 = document.getElementById("name-modal2");
+      modalName2.textContent = "name: " + arrayObjetos[1].name;
 
-        const modalName3 = document.getElementById("name-modal3");
-        modalName3.textContent = "name: " + arrayObjetos[2].name;
+      const modalName3 = document.getElementById("name-modal3");
+      modalName3.textContent = "name: " + arrayObjetos[2].name;
 
-        const modalName4 = document.getElementById("name-modal4");
-        modalName4.textContent = "name: " + arrayObjetos[3].name;
+      const modalName4 = document.getElementById("name-modal4");
+      modalName4.textContent = "name: " + arrayObjetos[3].name;
 
-        const modalName5 = document.getElementById("name-modal5");
-        modalName5.textContent = "name: " + arrayObjetos[4].name;
+      const modalName5 = document.getElementById("name-modal5");
+      modalName5.textContent = "name: " + arrayObjetos[4].name;
 
-        const modalName6 = document.getElementById("name-modal6");
-        modalName6.textContent = "name: " + arrayObjetos[5].name;
+      const modalName6 = document.getElementById("name-modal6");
+      modalName6.textContent = "name: " + arrayObjetos[5].name;
 
-        const modalName7 = document.getElementById("name-modal7");
-        modalName7.textContent = "name: " + arrayObjetos[6].name;
+      const modalName7 = document.getElementById("name-modal7");
+      modalName7.textContent = "name: " + arrayObjetos[6].name;
 
-        const modalName8 = document.getElementById("name-modal8");
-        modalName8.textContent = "name: " + arrayObjetos[7].name;
+      const modalName8 = document.getElementById("name-modal8");
+      modalName8.textContent = "name: " + arrayObjetos[7].name;
 
-        const modalName9 = document.getElementById("name-modal9");
-        modalName9.textContent = "name: " + arrayObjetos[8].name;
+      const modalName9 = document.getElementById("name-modal9");
+      modalName9.textContent = "name: " + arrayObjetos[8].name;
 
-        const modalEmail = document.getElementById("email-modal1");
-        modalEmail.textContent = "email: " + arrayObjetos[0].email;
+      const modalEmail = document.getElementById("email-modal1");
+      modalEmail.textContent = "email: " + arrayObjetos[0].email;
 
-        const modalEmail2 = document.getElementById("email-modal2");
-        modalEmail2.textContent = "email: " + arrayObjetos[1].email;
+      const modalEmail2 = document.getElementById("email-modal2");
+      modalEmail2.textContent = "email: " + arrayObjetos[1].email;
 
-        const modalEmail3 = document.getElementById("email-modal3");
-        modalEmail3.textContent = "email: " + arrayObjetos[2].email;
+      const modalEmail3 = document.getElementById("email-modal3");
+      modalEmail3.textContent = "email: " + arrayObjetos[2].email;
 
-        const modalEmail4 = document.getElementById("email-modal4");
-        modalEmail4.textContent = "email: " + arrayObjetos[3].email;
+      const modalEmail4 = document.getElementById("email-modal4");
+      modalEmail4.textContent = "email: " + arrayObjetos[3].email;
 
-        const modalEmail5 = document.getElementById("email-modal5");
-        modalEmail5.textContent = "email: " + arrayObjetos[4].email;
+      const modalEmail5 = document.getElementById("email-modal5");
+      modalEmail5.textContent = "email: " + arrayObjetos[4].email;
 
-        const modalEmail6 = document.getElementById("email-modal6");
-        modalEmail6.textContent = "email: " + arrayObjetos[5].email;
+      const modalEmail6 = document.getElementById("email-modal6");
+      modalEmail6.textContent = "email: " + arrayObjetos[5].email;
 
-        const modalEmail7 = document.getElementById("email-modal7");
-        modalEmail7.textContent = "email: " + arrayObjetos[6].email;
+      const modalEmail7 = document.getElementById("email-modal7");
+      modalEmail7.textContent = "email: " + arrayObjetos[6].email;
 
-        const modalEmail8 = document.getElementById("email-modal8");
-        modalEmail8.textContent = "email: " + arrayObjetos[7].email;
+      const modalEmail8 = document.getElementById("email-modal8");
+      modalEmail8.textContent = "email: " + arrayObjetos[7].email;
 
-        const modalEmail9 = document.getElementById("email-modal9");
-        modalEmail9.textContent = "email: " + arrayObjetos[8].email;
-      });
-
-
-
+      const modalEmail9 = document.getElementById("email-modal9");
+      modalEmail9.textContent = "email: " + arrayObjetos[8].email;
     });
-    
-    fetch("http://localhost:3000/comments")
-.then((array) => array.json())
-.then((arrayObjetos) => {
-  // console.log(arrayObjetos[0].name);
-  // console.log(arrayObjetos[0].email);
 
-  arrayObjetos.map((copy) => {
-    console.log("Body" + copy.body);            
-
-      
-
-  });
-});                                             
-
+  fetch("http://localhost:3000/comments")
+    .then((array) => array.json())
+    .then((arrayObjetos) => {
+      // console.log(arrayObjetos[0].name);
+      // console.log(arrayObjetos[0].email);
+console.log(arrayObjetos[0].body);
+      // arrayObjetos.map((copy) => {
+      //   console.log("Body" + `${copy.body}`);
+        
+      // });
+    });
+});
 
 // fetch("http://localhost:3000/comments")
 // .then((array) => array.json())
@@ -167,13 +160,13 @@ window.addEventListener("load", () => {
 //   arrayObjetos.map((copy) => {
 //     console.log("Body" + copy.body);
 
-  
 //   });
 // });
 
-
-
 /* PRUEBA */
+
+const btnCat = document.getElementById("btnCat");
+const catContainer = document.getElementById("catContainer");
 
 btnCat.addEventListener("click", getRandomCat);
 
@@ -181,7 +174,7 @@ function getRandomCat() {
   fetch("http://localhost:3000/posts")
     .then((array) => array.json())
     .then((arrayObjetos) => {
-      console.log(arrayObjetos[5].body);
+      // console.log(arrayObjetos[5].body);
       catContainer.textContent = arrayObjetos[5].title;
     });
 }
