@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +20,7 @@
       defer
     ></script>
 
-    <title>Blog With Api/title></title>
+    <title>Blog With Api</title>
   </head>
   <body>
     <!-- The main container will display the list of posts that have been received in response to the API request. Only the title of each post will be shown in this list.
@@ -33,18 +33,27 @@
     </nav>
 
     <div class="list-group d-none">
-      <a href="#" class="list-group-item list-group-item-action">
+      <a
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        href="#"
+        class="list-group-item list-group-item-action"
+      >
         <h2 class="list-title"></h2>
         A simple default list group item</a
       >
 
       <a
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
         href="#"
         class="list-group-item list-group-item-action list-group-item-primary"
         ><h2 class="list-title"></h2>
         A simple primary list group item</a
       >
       <a
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
         href="#"
         class="list-group-item list-group-item-action list-group-item-secondary"
         ><h2 class="list-title"></h2>
@@ -57,12 +66,16 @@
         A simple success list group item</a
       >
       <a
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
         href="#"
         class="list-group-item list-group-item-action list-group-item-danger"
         ><h2 class="list-title"></h2>
         A simple danger list group item</a
       >
       <a
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
         href="#"
         class="list-group-item list-group-item-action list-group-item-warning"
         ><h2 class="list-title"></h2>
@@ -70,11 +83,15 @@
       >
       <a
         href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
         class="list-group-item list-group-item-action list-group-item-info"
         ><h2 class="list-title"></h2>
         A simple info list group item</a
       >
       <a
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
         href="#"
         class="list-group-item list-group-item-action list-group-item-light"
         ><h2 class="list-title"></h2>
@@ -102,7 +119,7 @@
       type="button"
       class="btn btn-primary"
       data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
+      data-bs-target="#exampleModal1"
     >
       Abrir el modal ------------
     </button>
@@ -128,7 +145,7 @@
           </div>
 
           <div class="modal-body">
-            <h2>post titil</h2>
+            <h2 id="title-modal">post titil</h2>
             <h2>user</h2>
             <p>Thalitaaa</p>
           </div>
