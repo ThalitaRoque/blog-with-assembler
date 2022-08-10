@@ -143,6 +143,10 @@ window.addEventListener("load", () => {
     .then((arrayObjetos) => {
       // console.log(arrayObjetos[0].name);
       // console.log(arrayObjetos[0].email);
+
+      const comentModal = document.getElementById("comment-modal1");
+      comentModal.textContent = "modal: " + arrayObjetos[0].body;
+
 console.log(arrayObjetos[0].body);
       // arrayObjetos.map((copy) => {
       //   console.log("Body" + `${copy.body}`);
