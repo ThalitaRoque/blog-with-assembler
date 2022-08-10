@@ -138,8 +138,40 @@ window.addEventListener("load", () => {
         const modalEmail9 = document.getElementById("email-modal9");
         modalEmail9.textContent = "email: " + arrayObjetos[8].email;
       });
+
+
+
     });
-});
+    
+    fetch("http://localhost:3000/comments")
+.then((array) => array.json())
+.then((arrayObjetos) => {
+  // console.log(arrayObjetos[0].name);
+  // console.log(arrayObjetos[0].email);
+
+  arrayObjetos.map((copy) => {
+    console.log("Body" + copy.body);            
+
+      
+
+  });
+});                                             
+
+
+// fetch("http://localhost:3000/comments")
+// .then((array) => array.json())
+// .then((arrayObjetos) => {
+//   // console.log(arrayObjetos[0].name);
+//   // console.log(arrayObjetos[0].email);
+
+//   arrayObjetos.map((copy) => {
+//     console.log("Body" + copy.body);
+
+  
+//   });
+// });
+
+
 
 /* PRUEBA */
 
