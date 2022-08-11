@@ -147,7 +147,68 @@ window.addEventListener("load", () => {
       const comentModal = document.getElementById("comment-modal1");
       comentModal.textContent = "modal: " + arrayObjetos[0].body;
 
+      const comentModal2 = document.getElementById("comment-modal2");
+      comentModal2.textContent = "modal: " + arrayObjetos[1].body;
+
+      const comentModal3 = document.getElementById("comment-modal3");
+      comentModal3.textContent = "modal: " + arrayObjetos[2].body;
+
+      const comentModal4 = document.getElementById("comment-modal4");
+      comentModal4.textContent = "modal: " + arrayObjetos[3].body;
+
+      const comentModal5 = document.getElementById("comment-modal5");
+      comentModal5.textContent = "modal: " + arrayObjetos[4].body;
+
+      const comentModal6 = document.getElementById("comment-modal6");
+      comentModal6.textContent = "modal: " + arrayObjetos[5].body;
+
+      const comentModal7 = document.getElementById("comment-modal7");
+      comentModal7.textContent = "modal: " + arrayObjetos[6].body;
+
+      const comentModal8 = document.getElementById("comment-modal8");
+      comentModal8.textContent = "modal: " + arrayObjetos[7].body;
+
+      const comentModal9 = document.getElementById("comment-modal9");
+      comentModal9.textContent = "modal: " + arrayObjetos[8].body;
+
 console.log(arrayObjetos[0].body);
+    
+    });
+
+    fetch("http://localhost:3000/comments")
+    .then((array) => array.json())
+    .then((arrayObjetos) => {
+      
+
+      const emailComentModal = document.getElementById("comment-email-modal1");
+      emailComentModal.textContent = "email: " + arrayObjetos[0].email;
+
+      const emailComentModal2 = document.getElementById("comment-email-modal2");
+      emailComentModal2.textContent = "email: " + arrayObjetos[1].email;
+
+      const emailComentModal3 = document.getElementById("comment-email-modal3");
+      emailComentModal3.textContent = "email: " + arrayObjetos[2].email;
+
+      const emailComentModal4 = document.getElementById("comment-email-modal4");
+      emailComentModal4.textContent = "email: " + arrayObjetos[3].email;
+
+      const emailComentModal5 = document.getElementById("comment-email-modal5");
+      emailComentModal5.textContent = "email: " + arrayObjetos[4].email;
+
+      const emailComentModal6 = document.getElementById("comment-email-modal6");
+      emailComentModal6.textContent = "email: " + arrayObjetos[5].email;
+
+      const emailComentModal7 = document.getElementById("comment-email-modal7");
+      emailComentModal7.textContent = "email: " + arrayObjetos[6].email;
+
+      const emailComentModal8 = document.getElementById("comment-email-modal8");
+      emailComentModal8.textContent = "email: " + arrayObjetos[7].email;
+
+      const emailComentModal9 = document.getElementById("comment-email-modal9");
+      emailComentModal9.textContent = "email: " + arrayObjetos[8].email;
+
+
+console.log(arrayObjetos[0].email);
       // arrayObjetos.map((copy) => {
       //   console.log("Body" + `${copy.body}`);
         
