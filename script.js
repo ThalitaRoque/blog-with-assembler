@@ -170,14 +170,6 @@ window.addEventListener("load", () => {
 
       const comentModal9 = document.getElementById("comment-modal9");
       comentModal9.textContent = "modal: " + arrayObjetos[8].body;
-
-console.log(arrayObjetos[0].body);
-    
-    });
-
-    fetch("http://localhost:3000/comments")
-    .then((array) => array.json())
-    .then((arrayObjetos) => {
       
 
       const emailComentModal = document.getElementById("comment-email-modal1");
